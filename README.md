@@ -1,4 +1,3 @@
-Unzip this file.
 Open Server side with visual studio and change the connection string form appsettings.json. 
 Open Package manager console then Run Add-Migration and Update-Database command
 then open client side with visual studio code Open new terminal 
