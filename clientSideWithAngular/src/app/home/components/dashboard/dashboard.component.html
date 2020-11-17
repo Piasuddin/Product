@@ -1,0 +1,29 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" [opened]="dataService.isSidebarOpen" mode="side">
+        <div class="mt-5 dashboard-dide-nav">
+            <mat-nav-list class="mb-3">
+                <a mat-list-item class="side-nav-item" routerLink="/">
+                    <i class="material-icons">
+                        home
+                    </i>
+                    <h6 class="side-nav-menu-text">Home</h6>
+                </a>
+            </mat-nav-list>
+            <mat-divider></mat-divider>
+            <mat-nav-list class="mb-2">
+                <a mat-list-item class="side-nav-item" routerLink="/create-product">
+                    <i class="material-icons">
+                        playlist_add
+                        </i>
+                    <h6 class="side-nav-menu-text">Add New Product</h6>
+                </a>
+            </mat-nav-list>
+            <mat-divider></mat-divider>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content style="height: 100vh;">
+        <div class="container">
+            <app-list-product></app-list-product>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

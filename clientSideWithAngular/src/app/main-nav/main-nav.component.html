@@ -1,0 +1,16 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar id="myHeader" color="fruit">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="onMenuClick(drawer)">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <a routerLink="/">
+        <span>Product</span>
+      </a>
+    </mat-toolbar>
+    <ng-content></ng-content>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

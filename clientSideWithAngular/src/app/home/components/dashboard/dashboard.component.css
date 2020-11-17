@@ -1,0 +1,94 @@
+.slide-iamge-size{
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -150px;
+}
+.carousel-item{
+    max-height: 450px;
+}
+.description-text{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    color: white;
+}
+.header-text{
+    margin-bottom: 20px!important;
+}
+.btn-cursol{
+    padding: 10px;
+    font-size: 20px;
+    width: 200px;
+    color: white;
+}
+.video{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.spacer{
+    flex: 1 1 auto;
+}
+.image-fixed{
+    max-height: 200px;
+    max-width: 250px;
+}
+.shop-now-button{
+    width: 100%;
+}
+.spacer{
+    flex: 1 1 auto;
+}
+.example-card{
+    position: relative;
+}
+.btn-favorite-icon{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.product-detais-link{
+    text-decoration: none;
+}
+.cart-item:hover{
+    transform: scale(1.1);
+}
+.shadow{
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .7)!important;
+    padding-right: 0px!important;
+    
+}
+
+.example-container {
+    margin-top: 100px;
+    width: 100%;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    width: 270px;
+    position: fixed;
+  }
+  .dashboard-dide-nav{
+      padding-top: 25px;
+  }
+  .side-nav-menu-text{
+      width: 100%;
+      padding-top: 20px;
+      padding-left: 20px;
+  }
+  .side-nav-item{
+      padding-left: 20px;
+  }
+  .mat-drawer{
+    box-shadow: 5px 5px 10px #999;
+  }

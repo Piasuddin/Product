@@ -1,0 +1,48 @@
+<div class="app-container form-container margin-form-header">
+    <mat-card class="position-realative">
+        <mat-card class="mb-2 form-label position-absolute">
+            <h4 class="center item-center">Product Create</h4>
+            <mat-divider></mat-divider>
+            <nav aria-label="breadcrumb item-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                    <i class="material-icons">navigate_next</i>
+                    <li class="breadcrumb-item">Product Create</li>
+                </ol>
+            </nav>
+        </mat-card>
+        <div class="card-body card-white-background">
+            <div class="col d-flex justify-content-center">
+                <form [formGroup]="productForm" (ngSubmit)="onSubmit()" novalidate class="example-form">
+                    <mat-form-field class="input-full-width" appearance="fill">
+                        <mat-label>Product Name</mat-label>
+                        <input matInput placeholder="Enter Product Name" formControlName="name">
+                        <mat-error *ngIf="productForm.get('name').hasError('required')">
+                            Product name is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <mat-form-field class="input-full-width" appearance="fill">
+                                <mat-label>Product Category</mat-label>
+                                <select matNativeControl id="categoryId" formControlName="categoryId">
+                                    <option value="" disabled selected></option>
+                                    <option *ngFor="let item of allCategory" [value]="item.id">
+                                    {{item.name}}
+                                </option>
+                                </select>
+                                <mat-error *ngIf="productForm.get('categoryId').hasError('required')">
+                                    Category is<strong> required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <button type="submit" mat-raised-button class="btn-custom mt-2 float-right"
+                        color="primary">Save</button>
+                    <button type="button" routerLink="/" mat-raised-button
+                        class="btn-custom mr-2 mt-2 float-right" color="warn">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </mat-card>
+</div>
